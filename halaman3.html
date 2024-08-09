@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman 3</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<form action="./helper/add.php" method="POST">
+    <!-- Input Name -->
+    <div class="form-group">
+      <label for="recipient-name" class="col-form-label">Nama Teman:</label>
+      <input name="nama_teman" type="text" class="form-control" id="nama-teman" required />
+    </div>
+    <!-- Input NIM -->
+    <div class="form-group">
+      <label for="message-text" class="col-form-label">NIM:</label>
+      <input type="text" class="form-control" id="NIM" required name="nim">
+    </div>
+    <!-- Input Tanggal Lahir -->
+    <div class="form-group">
+      <label for="message-text" class="col-form-label">Tanggal Lahir:</label>
+      <input type="date" class="form-control" id="tanggal-lahir" required name="tanggal_lahir">
+    </div>
+    <!-- Input Jenis Kelamin -->
+    <div class="form-group">
+      <label for="form-check-label" class="col-form-label">Jenis Kelamin</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="jenis_kelamin" id="exampleRadios1"
+          value="Laki-Laki"  required>
+        <label class="form-check-label" for="exampleRadios1">
+          Laki-Laki
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="jenis_kelamin" id="exampleRadios2"
+          value="Perempuan" required>
+        <label class="form-check-label" for="exampleRadios2">
+          Perempuan
+        </label>
+      </div>
+    </div>
+    <!-- Input No WA -->
+    <div class="form-group">
+      <label for="message-text" class="col-form-label">No WA:</label>
+      <input type="text" class="form-control" id="no-wa" required name="no_wa">
+    </div>
+    <!-- Input Instagram -->
+    <div class="form-group">
+      <label for="message-text" class="col-form-label">Instagram:</label>
+      <input type="text" class="form-control" id="instagram" required name="instagram">
+    </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">
+    Close
+  </button>
+  <button type="submit" class="btn btn-primary">
+    Send message
+  </button>
+</div>
+</form>
